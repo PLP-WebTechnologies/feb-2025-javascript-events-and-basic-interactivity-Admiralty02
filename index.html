@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Event Assignment</title>
+  <script src="script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6 font-sans">
+  <div class="max-w-4xl mx-auto space-y-8">
+
+    <!-- Event Handling -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">1. Event Handling</h2>
+      <button id="clickBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Click Me</button>
+
+      <div id="hoverBox" class="mt-4 w-40 h-20 bg-gray-300 text-center flex items-center justify-center rounded">
+        Hover over me
+      </div>
+
+      <p id="keyPressOutput" class="mt-4 text-lg text-gray-700">Press any key...</p>
+
+      <div id="secretBox" class="mt-4 p-4 border border-red-400 rounded bg-red-100 cursor-pointer">
+        Double-click me for a secret
+      </div>
+    </section>
+
+    <!-- Interactive Elements -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">2. Interactive Elements</h2>
+      <button id="magicBtn" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">Change Me</button>
+
+      <div class="mt-6 space-x-2">
+        <img class="slide w-40 h-28 rounded shadow" src="https://via.placeholder.com/150/FFB6C1" style="display: block;" />
+        <img class="slide w-40 h-28 rounded shadow" src="https://via.placeholder.com/150/87CEFA" style="display: none;" />
+        <img class="slide w-40 h-28 rounded shadow" src="https://via.placeholder.com/150/90EE90" style="display: none;" />
+      </div>
+
+      <!-- Tabs -->
+      <div class="mt-6">
+        <div class="flex space-x-4 mb-2">
+          <button class="tab-button bg-gray-300 px-3 py-1 rounded" data-target="tab1">Tab 1</button>
+          <button class="tab-button bg-gray-300 px-3 py-1 rounded" data-target="tab2">Tab 2</button>
+        </div>
+        <div id="tab1" class="tab-content bg-white p-4 border rounded">This is Tab 1 content.</div>
+        <div id="tab2" class="tab-content bg-white p-4 border rounded hidden">This is Tab 2 content.</div>
+      </div>
+
+      <!-- Animation -->
+      <div class="mt-6">
+        <button id="animateBtn" class="bg-green-500 text-white px-4 py-2 rounded">Animate</button>
+        <div id="animatedBox" class="mt-4 w-20 h-20 bg-green-300 rounded"></div>
+      </div>
+    </section>
+
+    <!-- Form Validation -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">3. Form Validation</h2>
+      <form id="myForm" class="space-y-4">
+        <input type="email" id="email" placeholder="Email" class="block w-full border p-2 rounded" required />
+        <input type="password" id="password" placeholder="Password (min 8 chars)" class="block w-full border p-2 rounded" required />
+        <p id="passwordFeedback" class="text-sm text-red-500"></p>
+        <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Submit</button>
+      </form>
+    </section>
+
+  </div>
+</body>
+</html>
+            
